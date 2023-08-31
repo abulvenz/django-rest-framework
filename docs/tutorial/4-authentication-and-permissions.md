@@ -45,6 +45,8 @@ Normally we'd create a database migration in order to do that, but for the purpo
 
     rm -f db.sqlite3
     rm -r snippets/migrations
+    mkdir snippets/migrations
+    touch snippets/__init__.py
     python manage.py makemigrations snippets
     python manage.py migrate
 
